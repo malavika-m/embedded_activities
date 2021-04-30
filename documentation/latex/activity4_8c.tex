@@ -1,0 +1,118 @@
+\hypertarget{activity4_8c}{}\doxysection{src/activity4.c File Reference}
+\label{activity4_8c}\index{src/activity4.c@{src/activity4.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}activity4.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{activity4_8c_a62634036639f88eece6fbf226b45f84b}{BAUD}}~9600
+\item 
+\#define \mbox{\hyperlink{activity4_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~16000000ul
+\item 
+\#define \mbox{\hyperlink{activity4_8c_aa6b92cd101806fab27f766552beac344}{BAUD\+\_\+\+PRESCALE}}~((\mbox{\hyperlink{activity4_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}/(16ul$\ast$\mbox{\hyperlink{activity4_8c_a62634036639f88eece6fbf226b45f84b}{BAUD}}))-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{activity4_8c_a4ed3883de1458404fa0b79c524c9d5ef}{USART\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em USART\+\_\+int() configure USART registers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{activity4_8c_adef7e6935a555c01944add484a3dc88a}{display}} (uint16\+\_\+t \mbox{\hyperlink{main_8c_a36142ddde297ed1d5577c81230997301}{temp}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{activity4_8c_adef7e6935a555c01944add484a3dc88a}{display()}} siplays the corresponding temperature in\+Serial Moniter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+long int \mbox{\hyperlink{activity4_8c_ac1e8399c83da2b276b2200593325411f}{i}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{activity4_8c_a62634036639f88eece6fbf226b45f84b}\label{activity4_8c_a62634036639f88eece6fbf226b45f84b}} 
+\index{activity4.c@{activity4.c}!BAUD@{BAUD}}
+\index{BAUD@{BAUD}!activity4.c@{activity4.c}}
+\doxysubsubsection{\texorpdfstring{BAUD}{BAUD}}
+{\footnotesize\ttfamily \#define BAUD~9600}
+
+
+
+Definition at line 3 of file activity4.\+c.
+
+\mbox{\Hypertarget{activity4_8c_aa6b92cd101806fab27f766552beac344}\label{activity4_8c_aa6b92cd101806fab27f766552beac344}} 
+\index{activity4.c@{activity4.c}!BAUD\_PRESCALE@{BAUD\_PRESCALE}}
+\index{BAUD\_PRESCALE@{BAUD\_PRESCALE}!activity4.c@{activity4.c}}
+\doxysubsubsection{\texorpdfstring{BAUD\_PRESCALE}{BAUD\_PRESCALE}}
+{\footnotesize\ttfamily \#define BAUD\+\_\+\+PRESCALE~((\mbox{\hyperlink{activity4_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}/(16ul$\ast$\mbox{\hyperlink{activity4_8c_a62634036639f88eece6fbf226b45f84b}{BAUD}}))-\/1)}
+
+
+
+Definition at line 5 of file activity4.\+c.
+
+\mbox{\Hypertarget{activity4_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{activity4_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{activity4.c@{activity4.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!activity4.c@{activity4.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~16000000ul}
+
+
+
+Definition at line 4 of file activity4.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{activity4_8c_adef7e6935a555c01944add484a3dc88a}\label{activity4_8c_adef7e6935a555c01944add484a3dc88a}} 
+\index{activity4.c@{activity4.c}!display@{display}}
+\index{display@{display}!activity4.c@{activity4.c}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{temp }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{activity4_8c_adef7e6935a555c01944add484a3dc88a}{display()}} siplays the corresponding temperature in\+Serial Moniter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em an} & uint19\+\_\+t data type variable containing ADC output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file activity4.\+c.
+
+\mbox{\Hypertarget{activity4_8c_a4ed3883de1458404fa0b79c524c9d5ef}\label{activity4_8c_a4ed3883de1458404fa0b79c524c9d5ef}} 
+\index{activity4.c@{activity4.c}!USART\_init@{USART\_init}}
+\index{USART\_init@{USART\_init}!activity4.c@{activity4.c}}
+\doxysubsubsection{\texorpdfstring{USART\_init()}{USART\_init()}}
+{\footnotesize\ttfamily void USART\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+int() configure USART registers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file activity4.\+c.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{activity4_8c_ac1e8399c83da2b276b2200593325411f}\label{activity4_8c_ac1e8399c83da2b276b2200593325411f}} 
+\index{activity4.c@{activity4.c}!i@{i}}
+\index{i@{i}!activity4.c@{activity4.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily long int i}
+
+
+
+Definition at line 7 of file activity4.\+c.
+
