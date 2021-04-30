@@ -16,3 +16,5 @@
 
 >At 70% PWM
 ![](https://github.com/malavika-m/embedded_activities/blob/e9e38179683b62753fd53dff9e44ec0c9f031479/simulation/Screenshot%20(45).png)
+
+## BADGES
