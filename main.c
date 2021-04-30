@@ -1,6 +1,6 @@
 /**
  * @file main.c
- * @author your name (you@domain.com)
+ * @author MALAVIKA M(256323)
  * @brief 
  * @version 0.1
  * @date 2021-04-30
